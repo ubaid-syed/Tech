@@ -21,7 +21,7 @@ const App = () => {
         setIsLoading(false);
         document.body.style.cursor = "default";
         window.scrollTo(0, 0);
-      }, 4000);
+      }, 2000);
     })();
   }, []);
   return (
