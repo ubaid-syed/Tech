@@ -3,7 +3,6 @@ import Rounded from "../common/RoundedButton";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Magnetic from "../common/Magnetic/index";
-import SvgPathComponent from "../svgPath/SvgPathComponent";
 
 export default function Contact() {
   const container = useRef(null);
