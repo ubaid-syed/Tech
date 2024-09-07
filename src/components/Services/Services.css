@@ -1,0 +1,77 @@
+.card-container {
+  position: relative;
+}
+
+.card {
+  position: sticky;
+  top: 0; /* Make sure this value fits your design */
+  background-color: #6b21a8; /* Default color, will be overridden by inline styles */
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem; /* Adjust as needed */
+  z-index: 10;
+}
+
+.card:nth-of-type(1) {
+  top: 0;
+}
+
+.card:nth-of-type(2) {
+  top: 50vh;
+}
+
+.card:nth-of-type(3) {
+  top: 100vh;
+}
+
+.card:nth-of-type(4) {
+  top: 150vh;
+}
+
+.card:nth-of-type(5) {
+  top: 200vh;
+}
+
+.card:nth-of-type(6) {
+  top: 250vh;
+}
+
+.card:nth-of-type(7) {
+  top: 300vh;
+}
+
+/* Additional styling for card backgrounds */
+.bg-purple-700 {
+  background-color: #6b21a8;
+}
+
+.bg-blue-700 {
+  background-color: #1d4ed8;
+}
+
+.bg-yellow-700 {
+  background-color: #ca8a04;
+}
+
+.bg-green-700 {
+  background-color: #15803d;
+}
+
+.bg-pink-700 {
+  background-color: #d946ef;
+}
+
+.bg-slate-700 {
+  background-color: #334155;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
