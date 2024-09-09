@@ -30,7 +30,7 @@ const HomePage = () => {
         <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
         </AnimatePresence>
-        {/* <Hero /> */}
+        <Hero />
         <Works />
         <Mouse />
         <Home />
