@@ -35,7 +35,6 @@ const HomePage = () => {
         <Mouse />
         <Home />
         <Slider />
-        <div className="bg-black h-screen w-full"></div>
         <Contact />
       </main>
     </>
