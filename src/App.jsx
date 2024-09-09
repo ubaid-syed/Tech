@@ -1,43 +1,14 @@
-import React, { useEffect, useState } from "react";
-import Hero from "./modules/Hero";
-import useLocomotive from "./hooks/useLocomotive";
-
-import Works from "./components/Works/Works";
-import Mouse from "./MouseEffect/Mouse";
-
-import Slider from "./SlidingImages/Slider";
-import Preloader from "./Preloader/index";
-
-import Home from "./hello/Home";
-import Contact from "./Contact";
-import { AnimatePresence } from "framer-motion";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage/HomePage";
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  useLocomotive(true);
-  useEffect(() => {
-    (async () => {
-      setTimeout(() => {
-        setIsLoading(false);
-        document.body.style.cursor = "default";
-        window.scrollTo(0, 0);
-      }, 3000);
-    })();
-  }, []);
   return (
-    <>
-      <main>
-        <AnimatePresence mode="wait">
-          {isLoading && <Preloader />}
-        </AnimatePresence>
-        <Hero />
-        <Works />
-        <Mouse />
-        <Home />
-        <Slider />
-        <Contact />
-      </main>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 };
 

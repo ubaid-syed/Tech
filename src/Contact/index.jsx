@@ -3,6 +3,7 @@ import Rounded from "../common/RoundedButton";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Magnetic from "../common/Magnetic/index";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const container = useRef(null);
@@ -18,9 +19,6 @@ export default function Contact() {
     <motion.div style={{ y }} ref={container} className={styles.contact}>
       <div className={styles.body}>
         <div className={styles.title}>
-          {/* <div className="absolute mt-36">
-            <SvgPathComponent />
-          </div> */}
           <span>
             <div className={styles.imageContainer}>
               {/* Replace Next.js Image with regular img tag */}
