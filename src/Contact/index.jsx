@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Magnetic from "../common/Magnetic/index";
 import { Link } from "react-router-dom";
+// import SvgPathComponent from "../svgPath/SvgPathComponent";
 
 export default function Contact() {
   const container = useRef(null);
@@ -19,9 +20,11 @@ export default function Contact() {
     <motion.div style={{ y }} ref={container} className={styles.contact}>
       <div className={styles.body}>
         <div className={styles.title}>
+          {/* <div className="absolute mt-36">
+            <SvgPathComponent />
+          </div> */}
           <span>
             <div className={styles.imageContainer}>
-              {/* Replace Next.js Image with regular img tag */}
               <img
                 alt="background"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
@@ -32,9 +35,11 @@ export default function Contact() {
           </span>
           <h2>together</h2>
           <motion.div style={{ x }} className={styles.buttonContainer}>
-            <Rounded backgroundColor={"#334BD3"} className={styles.button}>
-              <p>Get in touch</p>
-            </Rounded>
+            <Link to="/contact-page">
+              <Rounded backgroundColor={"#334BD3"} className={styles.button}>
+                <p>Get in touch</p>
+              </Rounded>
+            </Link>
           </motion.div>
           <motion.svg
             style={{ rotate, scale: 2 }}

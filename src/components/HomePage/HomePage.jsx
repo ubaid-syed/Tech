@@ -30,11 +30,12 @@ const HomePage = () => {
         <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
         </AnimatePresence>
-        <Hero />
+        {/* <Hero /> */}
         <Works />
         <Mouse />
         <Home />
         <Slider />
+        <div className="bg-black h-screen w-full"></div>
         <Contact />
       </main>
     </>

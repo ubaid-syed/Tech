@@ -137,9 +137,9 @@ export default function Slider() {
           </div>
         ))}
       </div>
-      <div ref={circleRef} className={styles.circleContainer}>
+      {/* <div ref={circleRef} className={styles.circleContainer}>
         <div className={styles.circle}></div>
-      </div>
+      </div> */}
     </div>
   );
 }
